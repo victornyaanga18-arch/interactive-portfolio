@@ -1,0 +1,321 @@
+ody {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #1d4ed8,
+        #581c87
+    );
+    background-attachment: fixed;
+    color: #f8fafc;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(
+        135deg,
+        #020617,
+        #172554,
+        #4c1d95
+    );
+    border-bottom: 1px solid rgba(147, 197, 253, 0.3);
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+}
+
+header p:first-of-type {
+    color: #a5b4fc;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #dbeafe;
+}
+
+header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #818cf8;
+    margin-top: 20px;
+    box-shadow: 0 0 25px rgba(129, 140, 248, 0.6);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.07);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(2, 6, 23, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(129, 140, 248, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+nav a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+section {
+    background: rgba(15, 23, 42, 0.85);
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(129, 140, 248, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    scroll-margin-top: 100px;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    border-color: #818cf8;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #a5b4fc;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+section p {
+    color: #e2e8f0;
+}
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    color: #e2e8f0;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+li::marker {
+    color: #818cf8;
+}
+
+section a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #c4b5fd;
+    text-decoration: underline;
+}
+
+#Contact {
+    background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.95),
+        rgba(49, 46, 129, 0.8)
+    );
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #020617;
+    border-top: 1px solid rgba(129, 140, 248, 0.3);
+    color: #94a3b8;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 55px 18px 40px;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 12px 8px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 22px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 135px;
+        height: 135px;
+    }
+}
+body {
+    background-color: #f5f7fb;
+    color: #172033;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #0b1120;
+    color: #f1f5f9;
+}
+
+.dark-mode section,
+.dark-mode .project-card {
+    background-color: #111c33;
+}
+
+#theme-toggle {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    display: none;
+    z-index: 1000;
+
+    transition: background 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+    background: #7c3aed;
+    transform: translateY(-4px);
+}
+/* Interactive particle background */
+
+#particle-canvas {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+/* Keep the portfolio content above the canvas */
+
+body > :not(#particle-canvas) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Background color */
+
+body {
+    background-color: #080b1a;
+}
+
+/* Optional: translucent project cards */
+
+.project-card {
+    background: rgba(17, 24, 49, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(96, 165, 250, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(139, 92, 246, 0.8);
+
+    box-shadow: 0 10px 35px rgba(59, 130, 246, 0.15);
+}
+
+/* Reduce transitions for visitors who prefer less motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card {
+        transition: none;
+    }
+}
